@@ -1,12 +1,12 @@
 package com.fiap.entity.Exception;
 
-public class Exe2_ExcessoesUnchecked {
+public class Exe2_ExceptionUnchecked {
 
     public static void main(String[] args) {
 
         try {
 
-            int val = 10/0 ;
+           int val = 10/0 ;
             int[] valores = new int [3];
             System.out.println(valores[4]);
 
@@ -24,20 +24,20 @@ public class Exe2_ExcessoesUnchecked {
             e.printStackTrace();
 
 
-        }catch(ArrayIndexOutOfBoundsException e) { // Excessão de Erro de acesso indevido
+        }catch(ArrayIndexOutOfBoundsException e) { // Exceção de Erro de acesso indevido
             System.out.println("Não é possível acessar a posição 4 do Array!");
 
 
-        }catch(NullPointerException e) {// Excessão do eero de acesso ou tentativa de acesso ao Objeto que não foi inicializado
+        }catch(NullPointerException e) {// Exceção do eero de acesso ou tentativa de acesso ao Objeto que não foi inicializado
             System.out.println("Não foi possível retornar o length. Variável nome não foi instanciada!");
 
         }catch(NumberFormatException e) {// Exceção de erro de formatação, não conseguiu transformar a String zero em um número inteiro
             System.out.println("Não foi possível relizar a conversão!");
 
-        }catch(Exception e) {// Senenhum dos outros trechos conseguir tratar a conversão, esse trecho será responsável em fazê-lo
+        }catch(Exception e) {// Se nenhum dos outros trechos conseguir tratar a conversão, esse trecho será responsável em fazê-lo
             System.out.println("Erro na execução do programa!");
 
-        }finally { // Após o tratamento de excessão se ocorrrer ou não, o código passará por aqui.
+        }finally { // Após o tratamento de exceção se ocorrrer ou não, o código passará por aqui.
             System.out.println("Sempre passará aqui!");
         }
 
