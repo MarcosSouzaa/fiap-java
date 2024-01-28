@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TesteARquivo {
+public class TesteArquivo {
 
     public static void main(String[] args) {
 
